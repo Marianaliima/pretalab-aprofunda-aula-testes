@@ -32,11 +32,11 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
 - Usuário: `user`
 ```json
 {
-  "id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7",
-  "name": "Dandara da Silva",
-  "login": "dandara1995",
-  "email": "dandara@example.com",
-  "password": "123456"
+  "id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7",
+  "name": "Dandara da Silva",
+  "login": "dandara1995",
+  "email": "dandara@example.com",
+  "password": "123456"
 }
 ```
 
@@ -44,11 +44,11 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
 
 ```json
 {
-  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
-  "date": "2025-05-30T16:25:09",
-  "title": "Resenha sobre Ponciá Vicêncio",
-  "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem...",
-  "user_id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7"
+  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
+  "date": "2025-05-30T16:25:09",
+  "title": "Resenha sobre Ponciá Vicêncio",
+  "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem...",
+  "user_id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7"
 }
 ```
 
@@ -64,27 +64,27 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
  Corpo da requisição:
 ```json
 {
-  "name": "Dandara da Silva",
-  "login": "dandara1995",
-  "email": "dandara@example.com",
-  "password": "123456"
+  "name": "Dandara da Silva",
+  "login": "dandara1995",
+  "email": "dandara@example.com",
+  "password": "123456"
 }
 ```
 
-  **Resposta esperada em caso de sucesso** (status code: 200)
+  **Resposta esperada em caso de sucesso** (status code: 200)
 ```json
 {
-  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
-  "name": "Dandara da Silva",
-  "login": "dandara1995",
-  "email": "dandara@example.com",
-  "password": "123456"
+  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
+  "name": "Dandara da Silva",
+  "login": "dandara1995",
+  "email": "dandara@example.com",
+  "password": "123456"
 }
 ```
  **Resposta esperada em caso de erro** (status code: 500)
 ```json
 {
-  "error": "Houve um erro ao tentar cadastrar o usuário"
+  "error": "Houve um erro ao tentar cadastrar o usuário"
 }
 ```
 
@@ -94,20 +94,20 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
 
  **GET** `/users/a5c8a309-25cd-49c3-a41f-a7afb100b5e4`
 
-  **Resposta esperada em caso de sucesso** (status code: 200)
+  **Resposta esperada em caso de sucesso** (status code: 200)
 ```json
 {
-  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
-  "name": "Dandara da Silva",
-  "login": "dandara1995",
-  "email": "dandara@example.com",
-  "password": "123456"
+  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
+  "name": "Dandara da Silva",
+  "login": "dandara1995",
+  "email": "dandara@example.com",
+  "password": "123456"
 }
 ```
  **Resposta esperada em caso de erro. Usuário não encontrado** (status code: 404)
 ```json
 {
-  "error": "Usuário não encontrado"
+  "error": "Usuário não encontrado"
 }
 ```
 
@@ -120,25 +120,25 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
  Corpo da requisição:
 ```json
 {
-  "name": "Dandara Oliveira da Silva"
+  "name": "Dandara Oliveira da Silva"
 }
 ```
 
-  **Resposta esperada em caso de sucesso** (status code: 200)
+  **Resposta esperada em caso de sucesso** (status code: 200)
 ```json
 {
-  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
-  "name": "Dandara Oliveira da Silva",
-  "login": "dandara1995",
-  "email": "dandara@example.com",
-  "password": "123456"
+  "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
+  "name": "Dandara Oliveira da Silva",
+  "login": "dandara1995",
+  "email": "dandara@example.com",
+  "password": "123456"
 }
 ```
 
  **Resposta esperada em caso de erro** (status code: 500)
 ```json
 {
-  "error": "Houve um erro ao tentar atualizar o usuário"
+  "error": "Houve um erro ao tentar atualizar o usuário"
 }
 ```
 
@@ -146,21 +146,21 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
 
  **DELETE** `/users/a5c8a309-25cd-49c3-a41f-a7afb100b5e4`
 
-  **Resposta esperada em caso de sucesso** (status code: 204)
+  **Resposta esperada em caso de sucesso** (status code: 204)
 ```json
 {}
 ```
  **Resposta esperada em caso de erro. Usuário não encontrado** (status code: 404)
 ```json
 {
-  "error": "Usuário não encontrado"
+  "error": "Usuário não encontrado"
 }
 ```
 
 **Resposta esperada em caso de erro.** (status code: 500)
 ```json
 {
-  "error": "Erro ao deletar o usuário."
+  "error": "Erro ao deletar o usuário."
 }
 ```
 
@@ -175,19 +175,19 @@ A estrutura do projeto segue os princípios da **Clean Architecture**, separando
  Corpo da requisição:
 ```json
 {
-  "title": "Resenha sobre Ponciá Vicêncio",
-  "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem..."
+  "title": "Resenha sobre Ponciá Vicêncio",
+  "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem..."
 }
 ```
 
 Resposta em caso de sucesso:
 ```json
 {
-    "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
-    "date": "2025-05-30T16:25:09",
-    "title": "Resenha sobre Ponciá Vicêncio",
-    "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem...",
-    "user_id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7"
+    "id": "a5c8a309-25cd-49c3-a41f-a7afb100b5e4",
+    "date": "2025-05-30T16:25:09",
+    "title": "Resenha sobre Ponciá Vicêncio",
+    "content": "O Livro 'Ponciá Vicêncio' de Conceição Evaristo traz uma abordagem...",
+    "user_id": "4d72aece-424c-498d-98b6-5cbdba1fdfe7"
 }
 
 ```
